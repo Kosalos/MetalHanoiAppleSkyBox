@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		831FEB2919D0EE26004173E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2819D0EE26004173E4 /* UIKit.framework */; };
+		831FEB2B19D0EE2B004173E4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */; };
+		831FEB2D19D0EE2F004173E4 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831FEB2C19D0EE2F004173E4 /* Metal.framework */; };
+		8360EA3419D7977E005A0326 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8360EA3319D7977E005A0326 /* AudioToolbox.framework */; };
+		8369400C19D5396A00BF1652 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8369400B19D5396A00BF1652 /* CoreGraphics.framework */; };
+		9B578DD31A26089A003B365B /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DD21A26089A003B365B /* ViewController.mm */; };
+		9B578DD61A2608A8003B365B /* Transformations.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DD51A2608A8003B365B /* Transformations.mm */; };
+		9B578DDD1A2608C8003B365B /* Placement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DD81A2608C8003B365B /* Placement.mm */; };
+		9B578DDE1A2608C8003B365B /* Renderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DDA1A2608C8003B365B /* Renderer.mm */; };
+		9B578DDF1A2608C8003B365B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DDB1A2608C8003B365B /* Shaders.metal */; };
+		9B578DE21A2608E9003B365B /* p12.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B578DE01A2608E9003B365B /* p12.png */; };
+		9B578DE31A2608E9003B365B /* p19.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B578DE11A2608E9003B365B /* p19.png */; };
+		9B578DED1A26090A003B365B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B578DE41A26090A003B365B /* Images.xcassets */; };
+		9B578DEF1A26090A003B365B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DE61A26090A003B365B /* main.m */; };
+		9B578DF11A26090A003B365B /* MetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DEA1A26090A003B365B /* MetalView.m */; };
+		9B578DF21A26090A003B365B /* MMesh.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DEC1A26090A003B365B /* MMesh.mm */; };
+		9B578DFD1A260928003B365B /* Cube.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578DF61A260927003B365B /* Cube.mm */; };
+		9B578E001A260928003B365B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B578DFB1A260927003B365B /* icon.png */; };
+		9B578E081A260941003B365B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B578E021A260941003B365B /* AppDelegate.m */; };
+		9B578E101A260B5A003B365B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B578E0E1A260B5A003B365B /* Main.storyboard */; };
+		9B578E131A260BDA003B365B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B578E111A260BDA003B365B /* LaunchScreen.xib */; };
+		9B578E1A1A261300003B365B /* hanoiArm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578E171A261300003B365B /* hanoiArm.mm */; };
+		9B578E1B1A261300003B365B /* hanoiBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578E181A261300003B365B /* hanoiBase.mm */; };
+		9B578E1C1A261300003B365B /* hanoiHand.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578E191A261300003B365B /* hanoiHand.mm */; };
+		9B578E251A26177E003B365B /* Robot.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B578E241A26177E003B365B /* Robot.mm */; };
+		9B87E4F41A2FCD8800021DB6 /* AAPLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B87E4F21A2FCD8800021DB6 /* AAPLTexture.m */; };
+		9B87E4F81A2FCD9B00021DB6 /* SkyBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B87E4F61A2FCD9B00021DB6 /* SkyBox.mm */; };
+		9B87E4FF1A2FCEDE00021DB6 /* skybox.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9B87E4FE1A2FCEDE00021DB6 /* skybox.metal */; };
+		9BA5756B1A26EAE100EA3BB9 /* Grid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5756A1A26EAE100EA3BB9 /* Grid.mm */; };
+		9BA5756E1A28EEB100EA3BB9 /* World.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9BA5756C1A28EEB100EA3BB9 /* World.mm */; };
+		9BBE896D1A303DE800CAB93C /* bk.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89671A303DE800CAB93C /* bk.png */; };
+		9BBE896E1A303DE800CAB93C /* dn.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89681A303DE800CAB93C /* dn.png */; };
+		9BBE896F1A303DE800CAB93C /* ft.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89691A303DE800CAB93C /* ft.png */; };
+		9BBE89701A303DE800CAB93C /* lf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE896A1A303DE800CAB93C /* lf.png */; };
+		9BBE89711A303DE800CAB93C /* rt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE896B1A303DE800CAB93C /* rt.png */; };
+		9BBE89721A303DE800CAB93C /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE896C1A303DE800CAB93C /* up.png */; };
+		9BBE89851A30C22300CAB93C /* jajsundown1_top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89801A30C22300CAB93C /* jajsundown1_top.jpg */; };
+		9BBE89861A30C22300CAB93C /* jajsundown1_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89811A30C22300CAB93C /* jajsundown1_back.jpg */; };
+		9BBE89871A30C22300CAB93C /* jajsundown1_front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89821A30C22300CAB93C /* jajsundown1_front.jpg */; };
+		9BBE89881A30C22300CAB93C /* jajsundown1_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89831A30C22300CAB93C /* jajsundown1_right.jpg */; };
+		9BBE89891A30C22300CAB93C /* jajsundown1_left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE89841A30C22300CAB93C /* jajsundown1_left.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		831FEAFC19D0EBD6004173E4 /* MetalHanoiAppleSkyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalHanoiAppleSkyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		831FEB2819D0EE26004173E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		831FEB2C19D0EE2F004173E4 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		8360EA3319D7977E005A0326 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8369400919D538FC00BF1652 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8369400B19D5396A00BF1652 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B578DD11A26089A003B365B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Source/ViewController.h; sourceTree = SOURCE_ROOT; };
+		9B578DD21A26089A003B365B /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ViewController.mm; path = Source/ViewController.mm; sourceTree = SOURCE_ROOT; };
+		9B578DD41A2608A8003B365B /* Transformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transformations.h; path = Source/Transformations.h; sourceTree = SOURCE_ROOT; };
+		9B578DD51A2608A8003B365B /* Transformations.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Transformations.mm; path = Source/Transformations.mm; sourceTree = SOURCE_ROOT; };
+		9B578DD71A2608C8003B365B /* Placement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Placement.h; path = Source/Placement.h; sourceTree = SOURCE_ROOT; };
+		9B578DD81A2608C8003B365B /* Placement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = Placement.mm; path = Source/Placement.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578DD91A2608C8003B365B /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = Source/Renderer.h; sourceTree = SOURCE_ROOT; };
+		9B578DDA1A2608C8003B365B /* Renderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Renderer.mm; path = Source/Renderer.mm; sourceTree = SOURCE_ROOT; };
+		9B578DDB1A2608C8003B365B /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = Shaders.metal; path = Source/Shaders.metal; sourceTree = SOURCE_ROOT; };
+		9B578DDC1A2608C8003B365B /* Shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = Shared.h; path = Source/Shared.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578DE01A2608E9003B365B /* p12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p12.png; path = Source/p12.png; sourceTree = SOURCE_ROOT; };
+		9B578DE11A2608E9003B365B /* p19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p19.png; path = Source/p19.png; sourceTree = SOURCE_ROOT; };
+		9B578DE41A26090A003B365B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Source/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		9B578DE51A26090A003B365B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		9B578DE61A26090A003B365B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
+		9B578DE91A26090A003B365B /* MetalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetalView.h; path = Source/MetalView.h; sourceTree = SOURCE_ROOT; };
+		9B578DEA1A26090A003B365B /* MetalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetalView.m; path = Source/MetalView.m; sourceTree = SOURCE_ROOT; };
+		9B578DEB1A26090A003B365B /* MMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MMesh.h; path = Source/MMesh.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578DEC1A26090A003B365B /* MMesh.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = MMesh.mm; path = Source/MMesh.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578DF51A260927003B365B /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cube.h; path = Source/Cube.h; sourceTree = SOURCE_ROOT; };
+		9B578DF61A260927003B365B /* Cube.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = Cube.mm; path = Source/Cube.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578DFB1A260927003B365B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Source/icon.png; sourceTree = SOURCE_ROOT; };
+		9B578E011A260941003B365B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Source/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		9B578E021A260941003B365B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Source/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		9B578E0F1A260B5A003B365B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Source/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		9B578E121A260BDA003B365B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Source/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		9B578E141A261300003B365B /* hanoiArm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = hanoiArm.h; path = Source/Blender/hanoiArm.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E151A261300003B365B /* hanoiBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = hanoiBase.h; path = Source/Blender/hanoiBase.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E161A261300003B365B /* hanoiHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = hanoiHand.h; path = Source/Blender/hanoiHand.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E171A261300003B365B /* hanoiArm.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = hanoiArm.mm; path = Source/Blender/hanoiArm.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E181A261300003B365B /* hanoiBase.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = hanoiBase.mm; path = Source/Blender/hanoiBase.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E191A261300003B365B /* hanoiHand.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = hanoiHand.mm; path = Source/Blender/hanoiHand.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B578E231A26177E003B365B /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = Source/Robot.h; sourceTree = SOURCE_ROOT; };
+		9B578E241A26177E003B365B /* Robot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = Robot.mm; path = Source/Robot.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B87E4F11A2FCD8800021DB6 /* AAPLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AAPLTexture.h; path = Source/AAPLTexture.h; sourceTree = SOURCE_ROOT; };
+		9B87E4F21A2FCD8800021DB6 /* AAPLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AAPLTexture.m; path = Source/AAPLTexture.m; sourceTree = SOURCE_ROOT; };
+		9B87E4F51A2FCD9B00021DB6 /* SkyBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SkyBox.h; path = Source/SkyBox.h; sourceTree = SOURCE_ROOT; };
+		9B87E4F61A2FCD9B00021DB6 /* SkyBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SkyBox.mm; path = Source/SkyBox.mm; sourceTree = SOURCE_ROOT; };
+		9B87E4FE1A2FCEDE00021DB6 /* skybox.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = skybox.metal; path = Source/skybox.metal; sourceTree = SOURCE_ROOT; };
+		9BA575691A26EAE100EA3BB9 /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Grid.h; path = Source/Grid.h; sourceTree = SOURCE_ROOT; };
+		9BA5756A1A26EAE100EA3BB9 /* Grid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; name = Grid.mm; path = Source/Grid.mm; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9BA5756C1A28EEB100EA3BB9 /* World.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = World.mm; path = Source/World.mm; sourceTree = SOURCE_ROOT; };
+		9BA5756D1A28EEB100EA3BB9 /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = World.h; path = Source/World.h; sourceTree = SOURCE_ROOT; };
+		9BBE89671A303DE800CAB93C /* bk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bk.png; sourceTree = SOURCE_ROOT; };
+		9BBE89681A303DE800CAB93C /* dn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dn.png; sourceTree = SOURCE_ROOT; };
+		9BBE89691A303DE800CAB93C /* ft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ft.png; sourceTree = SOURCE_ROOT; };
+		9BBE896A1A303DE800CAB93C /* lf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lf.png; sourceTree = SOURCE_ROOT; };
+		9BBE896B1A303DE800CAB93C /* rt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rt.png; sourceTree = SOURCE_ROOT; };
+		9BBE896C1A303DE800CAB93C /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = SOURCE_ROOT; };
+		9BBE89801A30C22300CAB93C /* jajsundown1_top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jajsundown1_top.jpg; path = Source/spot/jajsundown1_top.jpg; sourceTree = SOURCE_ROOT; };
+		9BBE89811A30C22300CAB93C /* jajsundown1_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jajsundown1_back.jpg; path = Source/spot/jajsundown1_back.jpg; sourceTree = SOURCE_ROOT; };
+		9BBE89821A30C22300CAB93C /* jajsundown1_front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jajsundown1_front.jpg; path = Source/spot/jajsundown1_front.jpg; sourceTree = SOURCE_ROOT; };
+		9BBE89831A30C22300CAB93C /* jajsundown1_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jajsundown1_right.jpg; path = Source/spot/jajsundown1_right.jpg; sourceTree = SOURCE_ROOT; };
+		9BBE89841A30C22300CAB93C /* jajsundown1_left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jajsundown1_left.jpg; path = Source/spot/jajsundown1_left.jpg; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		831FEAF919D0EBD6004173E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8360EA3419D7977E005A0326 /* AudioToolbox.framework in Frameworks */,
+				8369400C19D5396A00BF1652 /* CoreGraphics.framework in Frameworks */,
+				831FEB2D19D0EE2F004173E4 /* Metal.framework in Frameworks */,
+				831FEB2B19D0EE2B004173E4 /* QuartzCore.framework in Frameworks */,
+				831FEB2919D0EE26004173E4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		831FEAF319D0EBD6004173E4 = {
+			isa = PBXGroup;
+			children = (
+				831FEAFE19D0EBD6004173E4 /* Source */,
+				831FEB2E19D0EE3E004173E4 /* Frameworks */,
+				831FEAFD19D0EBD6004173E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		831FEAFD19D0EBD6004173E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				831FEAFC19D0EBD6004173E4 /* MetalHanoiAppleSkyBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		831FEAFE19D0EBD6004173E4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9B578DDC1A2608C8003B365B /* Shared.h */,
+				9B578E0E1A260B5A003B365B /* Main.storyboard */,
+				9B578E231A26177E003B365B /* Robot.h */,
+				9B578E241A26177E003B365B /* Robot.mm */,
+				9BA5756D1A28EEB100EA3BB9 /* World.h */,
+				9BA5756C1A28EEB100EA3BB9 /* World.mm */,
+				9BA575691A26EAE100EA3BB9 /* Grid.h */,
+				9BA5756A1A26EAE100EA3BB9 /* Grid.mm */,
+				9BBE89321A3003C700CAB93C /* SkyBox */,
+				9B578DD11A26089A003B365B /* ViewController.h */,
+				9B578DD21A26089A003B365B /* ViewController.mm */,
+				9B578DD91A2608C8003B365B /* Renderer.h */,
+				9B578DDA1A2608C8003B365B /* Renderer.mm */,
+				9B578DDB1A2608C8003B365B /* Shaders.metal */,
+				9B578DF51A260927003B365B /* Cube.h */,
+				9B578DF61A260927003B365B /* Cube.mm */,
+				9B578E011A260941003B365B /* AppDelegate.h */,
+				9B578E021A260941003B365B /* AppDelegate.m */,
+				9B578DD41A2608A8003B365B /* Transformations.h */,
+				9B578DD51A2608A8003B365B /* Transformations.mm */,
+				9B578DEB1A26090A003B365B /* MMesh.h */,
+				9B578DEC1A26090A003B365B /* MMesh.mm */,
+				9B578DE91A26090A003B365B /* MetalView.h */,
+				9B578DEA1A26090A003B365B /* MetalView.m */,
+				9B578D561A155026003B365B /* ManualControl */,
+				9B578D371A12C6D1003B365B /* Blender */,
+				831FEAFF19D0EBD6004173E4 /* Supporting Files */,
+			);
+			name = Source;
+			path = BasicTexturing;
+			sourceTree = "<group>";
+		};
+		831FEAFF19D0EBD6004173E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B578DE61A26090A003B365B /* main.m */,
+				9B578DE51A26090A003B365B /* Info.plist */,
+				9B578DFB1A260927003B365B /* icon.png */,
+				9B578DE41A26090A003B365B /* Images.xcassets */,
+				9B578DE01A2608E9003B365B /* p12.png */,
+				9B578DE11A2608E9003B365B /* p19.png */,
+				9B578E111A260BDA003B365B /* LaunchScreen.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		831FEB2E19D0EE3E004173E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8360EA3319D7977E005A0326 /* AudioToolbox.framework */,
+				8369400B19D5396A00BF1652 /* CoreGraphics.framework */,
+				8369400919D538FC00BF1652 /* Foundation.framework */,
+				831FEB2C19D0EE2F004173E4 /* Metal.framework */,
+				831FEB2A19D0EE2B004173E4 /* QuartzCore.framework */,
+				831FEB2819D0EE26004173E4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B578D371A12C6D1003B365B /* Blender */ = {
+			isa = PBXGroup;
+			children = (
+				9B578E141A261300003B365B /* hanoiArm.h */,
+				9B578E151A261300003B365B /* hanoiBase.h */,
+				9B578E161A261300003B365B /* hanoiHand.h */,
+				9B578E171A261300003B365B /* hanoiArm.mm */,
+				9B578E181A261300003B365B /* hanoiBase.mm */,
+				9B578E191A261300003B365B /* hanoiHand.mm */,
+			);
+			name = Blender;
+			sourceTree = "<group>";
+		};
+		9B578D561A155026003B365B /* ManualControl */ = {
+			isa = PBXGroup;
+			children = (
+				9B578DD71A2608C8003B365B /* Placement.h */,
+				9B578DD81A2608C8003B365B /* Placement.mm */,
+			);
+			name = ManualControl;
+			sourceTree = "<group>";
+		};
+		9BBE89321A3003C700CAB93C /* SkyBox */ = {
+			isa = PBXGroup;
+			children = (
+				9B87E4FE1A2FCEDE00021DB6 /* skybox.metal */,
+				9B87E4F51A2FCD9B00021DB6 /* SkyBox.h */,
+				9B87E4F61A2FCD9B00021DB6 /* SkyBox.mm */,
+				9B87E4F11A2FCD8800021DB6 /* AAPLTexture.h */,
+				9B87E4F21A2FCD8800021DB6 /* AAPLTexture.m */,
+				9BBE89671A303DE800CAB93C /* bk.png */,
+				9BBE89681A303DE800CAB93C /* dn.png */,
+				9BBE89691A303DE800CAB93C /* ft.png */,
+				9BBE896A1A303DE800CAB93C /* lf.png */,
+				9BBE896B1A303DE800CAB93C /* rt.png */,
+				9BBE896C1A303DE800CAB93C /* up.png */,
+				9BBE89801A30C22300CAB93C /* jajsundown1_top.jpg */,
+				9BBE89811A30C22300CAB93C /* jajsundown1_back.jpg */,
+				9BBE89821A30C22300CAB93C /* jajsundown1_front.jpg */,
+				9BBE89831A30C22300CAB93C /* jajsundown1_right.jpg */,
+				9BBE89841A30C22300CAB93C /* jajsundown1_left.jpg */,
+			);
+			name = SkyBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		831FEAFB19D0EBD6004173E4 /* MetalHanoiAppleSkyBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 831FEB1F19D0EBD7004173E4 /* Build configuration list for PBXNativeTarget "MetalHanoiAppleSkyBox" */;
+			buildPhases = (
+				831FEAF819D0EBD6004173E4 /* Sources */,
+				831FEAF919D0EBD6004173E4 /* Frameworks */,
+				831FEAFA19D0EBD6004173E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalHanoiAppleSkyBox;
+			productName = BasicTexturing;
+			productReference = 831FEAFC19D0EBD6004173E4 /* MetalHanoiAppleSkyBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		831FEAF419D0EBD6004173E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Metal By Example";
+				TargetAttributes = {
+					831FEAFB19D0EBD6004173E4 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7237X7VY2S;
+					};
+				};
+			};
+			buildConfigurationList = 831FEAF719D0EBD6004173E4 /* Build configuration list for PBXProject "MetalHanoiAppleSkyBox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 831FEAF319D0EBD6004173E4;
+			productRefGroup = 831FEAFD19D0EBD6004173E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831FEAFB19D0EBD6004173E4 /* MetalHanoiAppleSkyBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		831FEAFA19D0EBD6004173E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B578E001A260928003B365B /* icon.png in Resources */,
+				9B578DED1A26090A003B365B /* Images.xcassets in Resources */,
+				9B578DE31A2608E9003B365B /* p19.png in Resources */,
+				9BBE89861A30C22300CAB93C /* jajsundown1_back.jpg in Resources */,
+				9BBE896E1A303DE800CAB93C /* dn.png in Resources */,
+				9BBE89881A30C22300CAB93C /* jajsundown1_right.jpg in Resources */,
+				9B578E101A260B5A003B365B /* Main.storyboard in Resources */,
+				9BBE89851A30C22300CAB93C /* jajsundown1_top.jpg in Resources */,
+				9BBE89701A303DE800CAB93C /* lf.png in Resources */,
+				9BBE89721A303DE800CAB93C /* up.png in Resources */,
+				9BBE896F1A303DE800CAB93C /* ft.png in Resources */,
+				9B578E131A260BDA003B365B /* LaunchScreen.xib in Resources */,
+				9BBE89891A30C22300CAB93C /* jajsundown1_left.jpg in Resources */,
+				9BBE89871A30C22300CAB93C /* jajsundown1_front.jpg in Resources */,
+				9B578DE21A2608E9003B365B /* p12.png in Resources */,
+				9BBE89711A303DE800CAB93C /* rt.png in Resources */,
+				9BBE896D1A303DE800CAB93C /* bk.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		831FEAF819D0EBD6004173E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B578E251A26177E003B365B /* Robot.mm in Sources */,
+				9B578DDD1A2608C8003B365B /* Placement.mm in Sources */,
+				9B578DD61A2608A8003B365B /* Transformations.mm in Sources */,
+				9B578E1A1A261300003B365B /* hanoiArm.mm in Sources */,
+				9B578DDE1A2608C8003B365B /* Renderer.mm in Sources */,
+				9B578E081A260941003B365B /* AppDelegate.m in Sources */,
+				9B87E4FF1A2FCEDE00021DB6 /* skybox.metal in Sources */,
+				9B578DF11A26090A003B365B /* MetalView.m in Sources */,
+				9BA5756B1A26EAE100EA3BB9 /* Grid.mm in Sources */,
+				9B87E4F41A2FCD8800021DB6 /* AAPLTexture.m in Sources */,
+				9B578DD31A26089A003B365B /* ViewController.mm in Sources */,
+				9B578DF21A26090A003B365B /* MMesh.mm in Sources */,
+				9BA5756E1A28EEB100EA3BB9 /* World.mm in Sources */,
+				9B578E1C1A261300003B365B /* hanoiHand.mm in Sources */,
+				9B87E4F81A2FCD9B00021DB6 /* SkyBox.mm in Sources */,
+				9B578DFD1A260928003B365B /* Cube.mm in Sources */,
+				9B578DEF1A26090A003B365B /* main.m in Sources */,
+				9B578E1B1A261300003B365B /* hanoiBase.mm in Sources */,
+				9B578DDF1A2608C8003B365B /* Shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B578E0E1A260B5A003B365B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B578E0F1A260B5A003B365B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B578E111A260BDA003B365B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B578E121A260BDA003B365B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		831FEB1D19D0EBD7004173E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		831FEB1E19D0EBD7004173E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		831FEB2019D0EBD7004173E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7237X7VY2S;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MetalHanoiAppleSkyBox;
+			};
+			name = Debug;
+		};
+		831FEB2119D0EBD7004173E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7237X7VY2S;
+				INFOPLIST_FILE = Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = MetalHanoiAppleSkyBox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		831FEAF719D0EBD6004173E4 /* Build configuration list for PBXProject "MetalHanoiAppleSkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831FEB1D19D0EBD7004173E4 /* Debug */,
+				831FEB1E19D0EBD7004173E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831FEB1F19D0EBD7004173E4 /* Build configuration list for PBXNativeTarget "MetalHanoiAppleSkyBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				831FEB2019D0EBD7004173E4 /* Debug */,
+				831FEB2119D0EBD7004173E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 831FEAF419D0EBD6004173E4 /* Project object */;
+}
